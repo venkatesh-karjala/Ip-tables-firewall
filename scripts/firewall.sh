@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # IPTables Firewall Script
-# Author: Your Name
-# Date: YYYY-MM-DD
+# Author: Venkatesh karjala
+# Date: 2025-01-28
 
 # Define variables
 IPT="/sbin/iptables"
@@ -37,6 +37,23 @@ $IPT -A INPUT -p tcp --dport 22 -j ACCEPT
 echo "Allowing HTTP and HTTPS..."
 $IPT -A INPUT -p tcp --dport 80 -j ACCEPT
 $IPT -A INPUT -p tcp --dport 443 -j ACCEPT
+
+# Optional Features Integration
+if [[ $1 == "--enable-rate-limit" ]]; then
+    echo "Applying rate-limiting rules..."
+    ./scripts/rate_limiting.sh
+fi
+
+if [[ $1 == "--enable-anti-spoofing" ]]; then
+    echo "Applying anti-spoofing rules..."
+    ./scripts/anti_spoofing.sh
+fi
+
+if [[ $1 == "--block-ports" ]]; then
+    echo "Blocking specified ports..."
+    ./scripts/block_ports.sh
+fi
+
 
 # Log dropped packets
 echo "Logging dropped packets..."
