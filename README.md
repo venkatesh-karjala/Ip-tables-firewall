@@ -38,25 +38,25 @@ Linux system with iptables installed.
 Root or sudo access.
 Installation
 
-*Clone this repository:
+#Clone this repository:
 
 git clone https://github.com/yourusername/IPTablesFirewall.git
 
-*Navigate to the project directory:
+#Navigate to the project directory:
 
 cd IPTablesFirewall
 
-*Run the script:
+#Run the script:
 
 sudo ./scripts/firewall.sh
 
-Contributing
+#Contributing
 Contributions are welcome! Feel free to submit issues or pull requests to improve this project.
 
-License
+#License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Future Features
+#Future Features
 Dynamic port management.
 Integration with UFW.
 Web-based dashboard for managing rules.
