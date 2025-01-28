@@ -1,7 +1,7 @@
 #IPTablesFirewall
 A Linux-based IP Tables Firewall script/tool for securing systems and networks.
 
-#Project Overview
+##Project Overview
 This project provides a simple yet effective firewall script using the powerful iptables utility available on Linux systems. The script is designed to:
 
 -Enhance system security by defining robust firewall rules.
@@ -12,10 +12,10 @@ This project provides a simple yet effective firewall script using the powerful 
 #Features
 Default Policies: Drop incoming traffic and accept outgoing traffic by default.
 Essential Port Allowance: SSH, HTTP/HTTPS, and other required services.
-Advanced Security:
+##Advanced Security:
 -Anti-spoofing rules.
 -Rate limiting.
-Usability:
+##Usability:
 -Persistent rules across reboots.
 -Easy configuration through CLI or a config file.
 -Logging for denied packets.
@@ -33,7 +33,7 @@ IPTablesFirewall/
     └── usage.md      # Detailed usage guide
 
 #Getting Started
-Prerequisites
+##Prerequisites
 -Linux system with iptables installed.
 -Root or sudo access.
 -Installation
