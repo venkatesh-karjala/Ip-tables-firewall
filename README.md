@@ -20,8 +20,8 @@ Essential Port Allowance: SSH, HTTP/HTTPS, and other required services.
 - Easy configuration through CLI or a config file.
 - Logging for denied packets.
 
+# Folder Structure
 ```
-#Folder Structure
 
 IPTablesFirewall/
 ├── README.md         # Project overview
@@ -35,27 +35,29 @@ IPTablesFirewall/
 ```
 
 # Getting Started
+We need the following Prerequisites in order for you setup the fire wall on your system and successfully run them.
+
 ## Prerequisites
 - Linux system with iptables installed.
 - Root or sudo access.
 - Installation
 
 ``` bash
-# Clone this repository:
+Clone this repository:
 
-git clone https://github.com/yourusername/IPTablesFirewall.git
+git clone https://github.com/venkatesh-karjala/Ip-tables-firewall.git
 
 ```
 ``` bash
 
-# Navigate to the project directory:
+Navigate to the project directory:
 
-cd IPTablesFirewall
+cd Ip-tables-firewall
 
 ```
 
 ``` bash
-# Run the script:
+Run the script:
 
 sudo ./scripts/firewall.sh
 
@@ -67,6 +69,6 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Future Features
-Dynamic port management.
-Integration with UFW.
-Web-based dashboard for managing rules.
+- Dynamic port management.
+- Integration with UFW.
+- Web-based dashboard for managing rules.
