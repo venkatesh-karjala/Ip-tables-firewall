@@ -24,14 +24,22 @@ Essential Port Allowance: SSH, HTTP/HTTPS, and other required services.
 ```
 
 IPTablesFirewall/
-├── README.md         # Project overview
-├── LICENSE           # Project license
-├── scripts/          # Scripts for configuring the firewall
-│   └── firewall.sh   # Main script
-├── config/           # Configuration files
-│   └── firewall.conf # Example config file
-└── docs/             # Documentation
-    └── usage.md      # Detailed usage guide
+IPTablesFirewall/
+├── README.md                  # Project overview
+├── LICENSE                    # License information
+├── CONTRIBUTING.md            # Contribution guidelines
+├── scripts/                   # Firewall-related scripts
+│   ├── firewall.sh            # Main firewall script
+│   ├── rate_limiting.sh       # Optional: SSH rate limiting
+│   ├── anti_spoofing.sh       # Optional: Anti-spoofing rules
+│   ├── block_ports.sh         # Optional: Port blocking
+├── config/                    # Configuration files
+│   ├── firewall.conf          # Configuration file
+├── docs/                      # Documentation
+│   ├── usage.md               # Guide on how to use the firewall
+│   ├── optional_features.md   # Explanation of optional features
+└── .gitignore                 # Git ignored files
+
 ```
 
 # Getting Started
