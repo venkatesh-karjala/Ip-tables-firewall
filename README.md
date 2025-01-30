@@ -125,8 +125,6 @@ Each feature is implemented in a separate script to allow easy customization. Mo
   ```
 - Always test new firewall rules before deploying them in a production environment.
 
----
-
 ## Future Features
 - Dynamic port management.
 - Integration with UFW.
