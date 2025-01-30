@@ -68,6 +68,65 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+# Optional Features for IPTables Firewall
+
+This document describes the optional features available in the IPTables Firewall project. Users can enable these features based on their specific security needs.
+
+## 1. Rate Limiting
+
+### Description
+Limits the number of SSH connection attempts to prevent brute-force attacks.
+
+### Script
+`scripts/rate_limiting.sh`
+
+### How to Enable
+Run the following command:
+```bash
+sudo ./firewall.sh --enable-rate-limit
+```
+
+## 2. Anti-Spoofing
+
+### Description
+Blocks spoofed packets from invalid source addresses to enhance network security.
+
+### Script
+`scripts/anti_spoofing.sh`
+
+### How to Enable
+Run the following command:
+```bash
+sudo ./firewall.sh --enable-anti-spoofing
+```
+
+## 3. Port Blocking
+
+### Description
+Blocks specific ports from being accessed. Customize the blocked ports in the script as needed.
+
+### Script
+`scripts/block_ports.sh`
+
+### How to Enable
+Run the following command:
+```bash
+sudo ./firewall.sh --block-ports
+```
+
+## Customization
+Each feature is implemented in a separate script to allow easy customization. Modify the scripts inside the `scripts/` directory to adjust rules based on your security needs.
+
+## Notes
+- These optional features **do not run by default**. You must explicitly enable them using the provided flags.
+- Ensure the scripts are executable:
+  ```bash
+  chmod +x scripts/*.sh
+  ```
+- Always test new firewall rules before deploying them in a production environment.
+
+---
+
 ## Future Features
 - Dynamic port management.
 - Integration with UFW.
